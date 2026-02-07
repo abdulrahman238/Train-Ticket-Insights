@@ -1,70 +1,93 @@
-## NationalRail-DataDashboard 
-# Data Modelling view
-![Data Model](modellinng.png)
+# NationalRail-DataDashboard
 
-
-**Short Description:**  
-Interactive **Power BI dashboard** analyzing UK National Rail ticket data. Includes **KPIs, revenue analysis, peak travel times, on-time performance**, and actionable insights using **DAX, Power Query, and data modeling**.
-
----
-
-# National Rail Ticket Data Analysis Dashboard
+![Data Model](images/data_model.png)  <!-- Add your data model image here -->
 
 ## Project Overview
-This project analyzes **UK National Rail train ticket data** from **January to April 2024**. The goal was to clean a **messy dataset**, develop a **data model**, and provide actionable insights for business decision-making using **Power BI**.
+This project analyzes **mock National Rail train ticket data** in the UK from **Jan–Apr 2024**. The dataset includes ticket types, travel dates & times, departure & arrival stations, prices, and journey status.  
 
-The dataset included ticket information such as **Ticket Type, Ticket Class, Departure & Arrival Stations, Trip Times, Prices, Journey Status**, and more.
+The data was **messy**, so I **cleaned it using Power Query**, developed a **star schema data model**, and connected relationships between the fact and dimension tables.  
+
+The goal is to provide actionable insights using **Power BI**, **DAX**, and **data modeling**.
 
 ---
 
 ## Tools Used
-* **Power BI** – dashboard development and visualization  
-* **DAX** – calculations, KPI measures, % comparisons  
-* **Power Query** – data cleaning and transformation  
-* **Data Modeling** – creating **fact and dimension tables**, establishing **relationships**, and developing a **star schema**
+- **Power BI**  
+- **DAX** (for KPIs and measures)  
+- **Power Query** (for data cleaning & transformation)  
+- **Data Modeling** (Fact & Dimension tables)  
 
 ---
 
-## Analysis Performed
-This dashboard answers key business questions:
-
-1. **Most Popular Routes**  
-   * Identified top train routes by passenger count  
-   * **Visuals:** Bar chart, Table  
-   * **Insight:** London → Manchester is the busiest route, followed by London → Birmingham
-
-2. **Peak Travel Times**  
-   * Determined busiest hours of the day (morning, afternoon, evening)  
-   * **Visuals:** Line chart, Column chart, KPI cards  
-   * **Insight:** Morning trips are the highest (17k trips), 183% higher than Afternoon (6k trips). Evening trips are second busiest (12k)
-
-3. **Revenue Variation by Ticket Types and Classes**  
-   * Compared revenue from **Ticket Types** and **Ticket Classes**  
-   * **Visuals:** Bar chart, Pie chart  
-   * **Insight:** Anytime tickets generate the most revenue. First Class tickets generate higher revenue per trip than Standard
-
-4. **On-Time Performance and Contributing Factors**  
-   * Evaluated % of trips **on-time, delayed, or cancelled**  
-   * **Visuals:** Donut/Pie chart, Table for reasons of delay  
-   * **Insight:** 85% of trips were on time. Main reasons for delays: **technical issues** and **weather**
+## Executive Summary (KPIs)
+| KPI | Value | Description |
+|-----|-------|-------------|
+| **Total Trips** | 35,000 | Total number of journeys recorded |
+| **Total Revenue** | £X,XXX | Total revenue generated from tickets |
+| **On-Time Performance** | 85% | Percentage of trips that arrived on time |
+| **Busiest Travel Period** | Morning | Time period with highest passenger volume |
 
 ---
 
-## Insights and Recommendations
-* **Morning trips** are consistently the busiest. Consider increasing capacity during morning peak hours.  
-* **Revenue is highest from Anytime tickets and First Class**, so promotions could target these segments.  
-* **Technical issues** are the main cause of delays — maintenance improvements can enhance reliability.  
-* **Messy raw data** was transformed using **Power Query**, and the **data model** ensures accurate reporting and future analysis.
+## Peak Travel Times
+**Visual:** Column Chart / Cards  
+
+**Insight:**  
+> “Passenger travel peaks in the **morning**, with trips significantly higher than afternoon and evening periods. Morning trips were 17k, **183% higher than afternoon** and **39% higher than evening**.”
+
+**Optional Comparison KPIs:**  
+- Morning vs Afternoon %  
+- Morning vs Evening %  
 
 ---
 
-## Dashboard Features
-* Interactive **KPI cards** showing trips and % changes between periods  
-* **Column and line charts** for route popularity and peak travel times  
-* **Revenue breakdown** by Ticket Type and Class  
-* **On-time performance analysis** with main delay causes  
-* **Q&A feature** for natural language queries in Power BI
+## Most Popular Routes
+**Visual:** Top 10 Routes Bar Chart (+ optional Table for details)  
+
+**Insight:**  
+> “**London → Manchester** is the most popular route, followed by London → Birmingham, indicating strong commuter and intercity demand.”  
+
+**Bonus:** Bottom 5 Departure Stations  
+> “Several smaller stations have consistently low demand, highlighting potential areas for service optimization.”
 
 ---
 
-This project demonstrates the ability to **clean messy datasets**, create **robust data models**, apply **DAX measures**, build **interactive dashboards**, and deliver **actionable business insights**.
+## Revenue by Ticket Type & Class
+**Visuals:**  
+- Bar Chart: Revenue by Ticket Type  
+- Donut/Bar Chart: Revenue by Ticket Class  
+
+**Insight:**  
+> “Revenue is primarily driven by **Advance tickets**, while **Standard passengers** contribute a higher average ticket value per journey.”  
+
+**Optional KPI:** Average Revenue per Trip  
+
+---
+
+## On-Time Performance & Delay Reasons
+**Visuals:**  
+- Donut Chart: Journey Status (On Time, Delayed, Cancelled)  
+- Bar Chart: Reasons for Delay  
+
+**Insight:**  
+> “85% of journeys were on time, 12% delayed, and 3% cancelled, showing strong overall reliability. Among delayed journeys, the majority of reasons (≈86%) are **unknown**, while the remaining delays are mainly caused by **technical issues** or **weather**.”
+
+---
+
+## Recommendations
+- Monitor **Morning travel** to allocate additional resources during peak hours.  
+- Investigate **low-demand departure stations** to optimize scheduling or marketing.  
+- Track **Advance tickets** and **Standard class revenue** for pricing strategy insights.  
+- Explore ways to **reduce unknown delay reasons**, improving data quality for operational decisions.
+
+---
+
+## Project Insights Summary
+- The **data was messy**, but after cleaning and **developing a data model**, insights were clear.  
+- **Morning trips dominate**, revenue is led by **Advance tickets**, and on-time performance is strong.  
+- Delay causes are mostly **unknown**, indicating a need for **better tracking systems**.  
+- This dashboard provides a **full picture for management and operational decisions**.
+
+---
+
+## Folder Structure (Optional)

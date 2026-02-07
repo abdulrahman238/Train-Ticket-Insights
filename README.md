@@ -1,6 +1,6 @@
-# NationalRail-DataDashboard
+# uK Train 
 
-![Data Model](images/data_model.png)  <!-- Add your data model image here -->
+![Data Model](modellinng.png)  <!-- Add your data model image here -->
 
 ## Project Overview
 This project analyzes **mock National Rail train ticket data** in the UK from **Jan–Apr 2024**. The dataset includes ticket types, travel dates & times, departure & arrival stations, prices, and journey status.  
@@ -22,8 +22,8 @@ The goal is to provide actionable insights using **Power BI**, **DAX**, and **da
 ## Executive Summary (KPIs)
 | KPI | Value | Description |
 |-----|-------|-------------|
-| **Total Trips** | 35,000 | Total number of journeys recorded |
-| **Total Revenue** | £X,XXX | Total revenue generated from tickets |
+| **Total Trips** | 35K | Total number of journeys recorded |
+| **Total Revenue** | 742K | Total revenue generated from tickets |
 | **On-Time Performance** | 85% | Percentage of trips that arrived on time |
 | **Busiest Travel Period** | Morning | Time period with highest passenger volume |
 
@@ -90,4 +90,3 @@ The goal is to provide actionable insights using **Power BI**, **DAX**, and **da
 
 ---
 
-## Folder Structure (Optional)

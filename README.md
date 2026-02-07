@@ -1,6 +1,6 @@
 ## NationalRail-DataDashboard 
 # Data Modelling view
-![Data Model](images/data_model.png)
+![Data Model](modellinng.png)
 **Short Description:**  
 Interactive **Power BI dashboard** analyzing UK National Rail ticket data. Includes **KPIs, revenue analysis, peak travel times, on-time performance**, and actionable insights using **DAX, Power Query, and data modeling**.
 
